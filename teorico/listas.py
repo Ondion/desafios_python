@@ -17,5 +17,6 @@ print('gato' in lista_animais) # possivel usar condicional com o IN
 nova_lista = lista_mistura * 2 # multiplicando listas
 print(nova_lista)
 
-lista_animais.append('girafa') # Incluindo um valor para a lista com append
-print(lista_animais)
+lista_animais.append('girafa') # Incluindo um valor, na ultima posição, para a lista com append
+lista_animais.reverse() # invertendo a ordem dos elementos da lista
+print(lista_animais[0])
