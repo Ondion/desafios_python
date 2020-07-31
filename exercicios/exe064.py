@@ -4,10 +4,12 @@
 
 print('===== DESAFIO 64 =====\n')
 
-soma = 0
+soma = contador = 0
 while True:
     interio = int(input('Digite o número a ser somado, <999> para sair: '))
     if interio == 999:
-        print(f'A soma total dos valores é: {soma}')
+        print(f'Foram digitados {contador} valores e a soma total é: {soma}')
         break
+    contador += 1
     soma += interio
+
