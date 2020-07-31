@@ -12,4 +12,3 @@ while True:
         break
     contador += 1
     soma += interio
-
