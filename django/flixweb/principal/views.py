@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from pathlib import Path
 # Create your views here.
 
 
 def index(request):
-    return HttpResponse(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    return render(request, 'principal/index.html')
