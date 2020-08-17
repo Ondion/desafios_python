@@ -15,8 +15,8 @@
     <div class="conteiner">
         <div class="divForm">
             <form onsubmit="/genero" id="form-genero" method="POST">
-                {{form}}
                 {% csrf_token %}
+                {{form}}
                 <input type="submit" id="submit-button" class="submit-button" value="Enviar"/>
             </form>
         </div>
