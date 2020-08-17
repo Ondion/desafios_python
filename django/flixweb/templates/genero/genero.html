@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 {% load static %}
 <html lang="pt-br">
 <head>
@@ -9,12 +9,34 @@
 </head>
 <body>
     {% include '../menu.html' %}
-
-</body>
 <main>
     <div class="conteiner">
+        <div>
+            {% if generos_records %}
+            <table>
+                <thead>
+                <tr>
+                    <th>Gênero</th>
+                    <th>Alterar</th>
+                    <th>Excluir</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for genero in generos_records %}
+                    <tr>
+                    <td>{{ genero.descricao }}</td>
+                    <td><button class="list_button editar">Alterar</button></td>
+                    <td><button class="list_button excluir" onclick="deleteItem({{genero.id}})">Excluir</button></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+                <p>Nenhum dado cadastrado</p>
+            {% endif %}
+        </div>
         <div class="divForm">
-            <form onsubmit="/genero" id="form-genero" method="POST">
+            <form onsubmit="/genero" id="form-genero" method="post">
                 {% csrf_token %}
                 {{form}}
                 <input type="submit" id="submit-button" class="submit-button" value="Enviar"/>
@@ -22,4 +44,28 @@
         </div>
     </div>
 </main>
+<script>
+        function deleteItem(id) {
+            const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+            const request = new Request("/genero/delete" + id,
+                {headers: {'X-CSRFToken': csrftoken}}
+            )
+
+            fetch(request, {
+                method: 'DELETE'
+                mode: 'same-origin'
+            }).then(
+                function (response) {
+                    if (reponse.status === 500) {
+                        alert("Não foi possivel excluir.")
+                    } else {
+                        location.replace("/genero")
+                    }
+
+                }
+            ) 
+        }
+
+</script>
+</body>
 </html>
