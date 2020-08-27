@@ -3,9 +3,9 @@
 
 print('===== DESAFIO 11 =====\n')
 
-parede_altura = int(input('Altura da parede: '))
-parede_largura = int(input('Largura da parede: '))
+parede_altura = float(input('Altura da parede: '))
+parede_largura = float(input('Largura da parede: '))
 
 print(f'Area da parede é: {parede_altura * parede_largura}m e serão necessários '
-      f'{int(((parede_altura * parede_largura) / 2))} litros de tinta para pintar, visto que a cada litro, pitamos '
+      f'{((parede_altura * parede_largura) / 2):.2f} litros de tinta para pintar, visto que a cada litro, pitamos '
       f'2 metros de parede.')
