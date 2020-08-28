@@ -3,5 +3,5 @@
 
 print('===== DESAFIO 47 =====\n')
 
-for i in range (0, 51, 2):
+for i in range (2, 51, 2):
     print(i, end=', ')

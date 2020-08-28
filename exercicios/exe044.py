@@ -7,7 +7,7 @@ print('===== \033[1;40mDESAFIO 44\033[m =====\n')
 
 valor = float(input('Qual o valor do produto? '))
 opcao = int(input('[1] - DINHEIRO A VISTA\n[2] - CHEQUE A VISTA\n[3] - CARTÃO A VISTA\n[4] - 2X NO CARTÃO\n'
-'[5] - 3X OU MAIS NO CARTÃO\n'))
+'[5] - 3X OU MAIS NO CARTÃO '))
 
 if opcao == 1:
     print(f'Para pagamento a vista em dinheiro, o valor, com 10% de desconto será R$:{valor * 0.9:.2f}')
