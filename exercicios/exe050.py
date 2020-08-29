@@ -9,4 +9,4 @@ for i in range(0, 6):
     if numero % 2 == 0:
         soma += numero
 
-print('\n\033[mA soma dos números pares digitados é:', soma)
+print('A soma dos números pares digitados é:', soma)
