@@ -6,7 +6,8 @@ print('===== DESAFIO 51 =====\n')
 
 p_termo = int(input('primeiro termo: '))
 razao = int(input('razão: '))
+interacoes = int(input('Quantas interações? '))
 
-for i in range(0, 10):
-    print(f'{p_termo}',  end=', ')
+for i in range (0, interacoes):
+    print(f'{p_termo}', end=' - ')
     p_termo += razao

@@ -4,7 +4,7 @@
 print('===== DESAFIO 55 =====\n')
 
 maior = menor = peso = float(input('Entre com o peso: '))
-for range in range(0 , 5):
+for range in range(0 , 4):
     peso = float(input('Entre com o peso: '))
     if peso > maior:
         maior = peso

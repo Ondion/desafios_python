@@ -18,5 +18,5 @@ for range in range(0, 4):
         mulheres += 1
 
 print(f'\nMédia de idade: {media / 4}'
-      f'\nHomem mais velho: {homem}'
+      f'\nHomem mais velho: {homem} e tem {i_homem} anos'
       f'\nMulheres menos de 20: {mulheres}')
