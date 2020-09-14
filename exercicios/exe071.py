@@ -4,14 +4,16 @@
 
 print('===== DESAFIO 71 =====\n')
 
-from random import randint
+from random import choice
 
 saque = int(input('Qual o valor do saque: '))
 
+list = [50, 20, 10, 1]
 n_50 = n_20 = n_10 = n_1 = 0
 
+
 while True:
-    aleatorio  = randint(1, 50)
+    aleatorio = choice(list)
     if aleatorio == 50 or aleatorio == 20 or aleatorio == 10 or aleatorio == 1:
         if saque >= aleatorio:
             if aleatorio == 50:
