@@ -5,6 +5,9 @@ print('===== DESAFIO 74 =====\n')
 
 from random import randint
 
-tupla = (randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100))
+while True:
+    tupla = (randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100), randint(0, 100))
+    print(f'Tupla: {tupla}\nMinimo: {min(tupla)}\nMaximo: {max(tupla)}')
 
-print(f'Tupla: {tupla}\nMinimo: {min(tupla)}\nMaximo: {max(tupla)}')
+    if str(input('\nMais um sorteio? [S/N]')) in 'Nn':
+        break
