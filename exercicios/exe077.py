@@ -4,11 +4,11 @@
 
 print('===== DESAFIO 77 =====\n')
 
-palavras = ('Notebook', 'Caneta', 'Lapis', 'Caderno', 'Caneca', 'Telefone')
+palavras = ('Notebook', 'Caneta', 'Lapis', 'Caderno', 'Caneca', 'Telefone', 'Escola')
 
-for x in palavras:
-    print('Na palavra:', x, 'temos as vogais: ', end='')
-    for y in x:
-        if y in 'aeiou':
-            print(y, end=' ')
+for palavra in palavras:
+    print('Na palavra:', palavra, 'temos as vogais: ', end='')
+    for letra in palavra:
+        if letra in 'AEIOUaeiou':
+            print(letra, end=' ')
     print('\n')
