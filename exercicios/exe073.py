@@ -8,7 +8,7 @@ times = ('Athletico PR', 'Atlético MG', 'Avaí', 'Bahia', 'Botafogo', 'Ceará',
 'Cruzeiro', 'CSA', 'Flamengo', 'Fluminense', 'Fortaleza', 'Goiás', 'Grêmio', 'Internacional', 'Palmeiras',
 'Santos', 'São Paulo', 'Vasco')
 
-print(f'Os cincos primeiros colocados: {times[0:5]}')
+print(f'Os cincos primeiros colocados: {times[:5]}')
 print(f'Os quatro últimos colocados: {times[-4:]}')
 print(f'Ordem alfabética: {sorted(times)}')
 print(f'Posição da Chapecoense: {times.index("Chapecoense") + 1}')
