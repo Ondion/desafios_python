@@ -6,7 +6,7 @@ from random import randint
 
 soma = 0
 while True:
-    pc = randint(0, 6)
+    pc = randint(0, 10)
     humano = int(input('Entre com o número que você irar jogar: '))
     parimpar = input('Você quer Par ou Impar? <P> <I>').lower()
     if parimpar != 'p' and parimpar != 'i':
