@@ -6,5 +6,4 @@ print('===== DESAFIO 72 =====\n')
 tupla = ('zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze',
 'quatorze', 'quinze', 'dezesseis', 'dezessente', 'dezoito', 'dezenove', 'vinte')
 
-
-print(tupla[int(input('n: '))])
+print(tupla[int(input('número: '))])
