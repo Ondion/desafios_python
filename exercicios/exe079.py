@@ -18,4 +18,5 @@ while True:
     else:
         lista.append(int(local))
 
-print(f'Os valores digitados em ordem crescente são: {sorted(lista)}')
+lista.sort()
+print(f'Os valores digitados em ordem crescente são: {lista}')
