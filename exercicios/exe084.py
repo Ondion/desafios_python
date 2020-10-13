@@ -15,4 +15,3 @@ for x in range (0, 5):
 print(f'Foram cadastradas {len(lista)} pessoas!')
 
 print(max(lista))
-
